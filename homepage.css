@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;; 
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.designer {
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'Kapakana'; 
+    src: url('fonts/kapakana_regular.woff2') format('woff2'),
+         url('fonts/kapakana_regular.woff') format('woff'),
+         url('fonts/kapakana_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Kapakana', sans-serif;  
+    font-size: 295px;
+    font-weight: normal;
+    position: absoulte;
+    margin-top: 180px;
+    margin-left: -20px;
+}
+
+.title:hover{
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6); ;
+
+}
+
+.white-line {
+    height: 0.1px;  /* 线的高度 */
+    background-color: white;  /* 线的颜色 */
+    width: 100%;  /* 让线铺满整个容器 */
+    margin-top: 23px; /* 调整上下间距 */
+}
+
+.quote {
+    color: #FFF;
+    text-align: center;
+    font-family: "Crimson Text";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: -10px;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    background-color: white; /* 小雪点颜色 */
+    width: 4px;
+    height: 4px;
+    border-radius: 50%; /* 让雪花变成圆形 */
+    user-select: none;
+    pointer-events: none;
+    opacity: 1;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+* {
+    cursor: none;
+}
+
+/* 定义自定义鼠标光标 */
+.cursor {
+    position: fixed;
+    width: 20px; /* 调整光标大小 */
+    height: 20px; /* 调整光标大小 */
+    background-color: white; /* 白色背景 */
+    border-radius: 50%; /* 圆形 */
+    pointer-events: none; /* 确保鼠标指针不会阻止点击 */
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* 发光效果 */
+    transition: all 0.1s ease; /* 平滑过渡 */
+    z-index: 1000; /* 确保光标位于最上层 */
+}
+

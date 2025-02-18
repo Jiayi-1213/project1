@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Crimson Text", serif;
+  text-align: center;
+  overflow: hidden; /* 防止滚动条 */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.snow-text {
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  transition: transform 5s ease-out, opacity 4s ease-in;
+  z-index: 2;
+}
+.snow-text:nth-child(1) { font-size: 25px; }
+.snow-text:nth-child(2) { font-size: 18px; }
+.snow-text:nth-child(3) { font-size: 24px; }
+.snow-text:nth-child(4) { font-size: 22px; }
+.snow-text:nth-child(5) { font-size: 20px; }
+.snow-text:nth-child(6) { font-size: 23px; }
+.snow-text:nth-child(7) { font-size: 30px; }
+.snow-text:nth-child(8) { font-size: 21px; }
+.snow-text:nth-child(9) { font-size: 20px; }
+.snow-text:nth-child(10) { font-size: 36px; }
+.snow-text:nth-child(11) { font-size: 23px; }
+.snow-text:nth-child(12) { font-size: 25px; }
+.snow-text:nth-child(13) { font-size: 30px; }
+.snow-text:nth-child(14) { font-size: 28px; }
+/* 雪花样式 */
+.snowflake {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  z-index: 1;
+  
+}
+
+/* 下落动画：从当前位置下降到视口底部 */
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0.2;
+  }
+}
+.snow-text.couldnt-tell {
+  font-size: 40px; /* 默认大小 */
+}
+
+/* 悬停时变大并发光 */
+.snow-text.couldnt-tell:hover {
+  font-size: 50px; /* 变大 */
+  text-shadow: 0 0 10px white, 0 0 20px rgba(255, 255, 255, 0.8); /* 发光效果 */
+  font-family: 'Kapakana', sans-serif;  
+}
+
+* {
+  cursor: none;
+}
+
+/* 定义自定义鼠标光标 */
+.cursor {
+  position: fixed;
+  width: 20px; /* 调整光标大小 */
+  height: 20px; /* 调整光标大小 */
+  background-color: white; /* 白色背景 */
+  border-radius: 50%; /* 圆形 */
+  pointer-events: none; /* 确保鼠标指针不会阻止点击 */
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* 发光效果 */
+  transition: all 0.1s ease; /* 平滑过渡 */
+  z-index: 1000; /* 确保光标位于最上层 */
+}
+
+
+

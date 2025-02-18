@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    overflow: hidden; /* 防止滚动条 */
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .snow-text {
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    white-space: nowrap;
+    transition: transform 5s ease-out, opacity 4s ease-in;
+    z-index: 2;
+  }
+  .snow-text:nth-child(1) { font-size: 20px; }
+  .snow-text:nth-child(2) { font-size: 19px; }
+  .snow-text:nth-child(3) { font-size: 24px; }
+  .snow-text:nth-child(4) { font-size: 20px; }
+  .snow-text:nth-child(5) { font-size: 22px; }
+  .snow-text:nth-child(6) { font-size: 23px; }
+  .snow-text:nth-child(7) { font-size: 24px; }
+  .snow-text:nth-child(8) { font-size: 23px; }
+  .snow-text:nth-child(9) { font-size: 29px; } 
+  .snow-text:nth-child(10) { font-size: 25px; }
+  .snow-text:nth-child(11) { font-size: 23px; }
+  .snow-text:nth-child(12) { font-size: 27px; }
+  .snow-text:nth-child(13) { font-size: 50px; }
+  .snow-text:nth-child(14) { font-size: 20px; }
+  .snow-text:nth-child(15) { font-size: 24px; }
+  .snow-text:nth-child(16) { font-size: 22px; }
+  .snow-text:nth-child(17) { font-size: 26px; }
+  .snow-text:nth-child(18) { font-size: 24px; }
+  .snow-text:nth-child(19) { font-size: 25px; }
+  .snow-text:nth-child(20) { font-size: 26px; }
+  .snow-text:nth-child(21) { font-size: 28px; }
+  .snow-text:nth-child(22) { font-size: 22px; }
+  .snow-text:nth-child(23) { font-size: 28px; }
+  .snow-text:nth-child(24) { font-size: 28px; }
+  .snow-text:nth-child(25) { font-size: 24px; }
+  .snow-text:nth-child(26) { font-size: 25px; }
+  .snow-text:nth-child(27) { font-size: 27px; }
+  .snow-text:nth-child(28) { font-size: 28px; }
+  .snow-text:nth-child(29) { font-size: 28px; }
+  .snow-text:nth-child(30) { font-size: 19px; }
+  .snow-text:nth-child(31) { font-size: 28px; }
+  .snow-text:nth-child(32) { font-size: 21px; }
+  .snow-text:nth-child(33) { font-size: 24px; }
+  .snow-text:nth-child(34) { font-size: 32px; }
+  .snow-text:nth-child(35) { font-size: 27px; }
+  .snow-text:nth-child(36) { font-size: 28px; }
+  .snow-text:nth-child(37) { font-size: 26px; }
+  .snow-text:nth-child(38) { font-size: 19px; }
+  .snow-text:nth-child(39) { font-size: 27px; }
+  .snow-text:nth-child(40) { font-size: 21px; }
+  .snow-text:nth-child(41) { font-size: 24px; }
+  .snow-text:nth-child(42) { font-size: 32px; }
+  .snow-text:nth-child(43) { font-size: 27px; }
+  .snow-text:nth-child(44) { font-size: 26px; }
+  .snow-text:nth-child(45) { font-size: 25px; }
+  .snow-text:nth-child(46) { font-size: 27px; }
+  .snow-text:nth-child(47) { font-size: 24px; }
+  .snow-text:nth-child(48) { font-size: 21px; }
+  .snow-text:nth-child(49) { font-size: 20px; }
+  .snow-text:nth-child(50) { font-size: 25px; }
+  .snow-text:nth-child(51) { font-size: 21px; }
+  .snow-text:nth-child(52) { font-size: 24px; }
+  .snow-text:nth-child(53) { font-size: 25px; }
+  .snow-text:nth-child(54) { font-size: 27px; }
+  .snow-text:nth-child(55) { font-size: 26px; }
+  .snow-text:nth-child(56) { font-size: 25px; }
+  .snow-text:nth-child(57) { font-size: 24px; }
+  .snow-text:nth-child(58) { font-size: 22px; }
+  .snow-text:nth-child(59) { font-size: 30px; }
+
+
+  .snow-text:nth-child(1) {
+    filter: saturate(0.2); 
+}
+
+.snow-text:nth-child(2) {
+    filter: saturate(0.1); 
+}
+
+.snow-text:nth-child(3) {
+    filter: saturate(0.2); 
+}
+
+.snow-text:nth-child(4) {
+  filter: saturate(0.2); 
+}
+
+.snow-text:nth-child(5) {
+  filter: saturate(0.3); 
+}
+
+.snow-text:nth-child(6) {
+  filter: saturate(0.5); 
+}
+
+.snow-text:nth-child(7) {
+  filter: saturate(0.4); 
+}
+
+.snow-text:nth-child(8) {
+  filter: saturate(0.6); 
+}
+
+.snow-text:nth-child(9) {
+  filter: saturate(0.4); 
+}
+
+.snow-text:nth-child(10) {
+  filter: saturate(0.5); 
+}
+
+.snow-text:nth-child(11) {
+  filter: saturate(0.3); 
+}
+
+.snow-text:nth-child(12) {
+  filter: saturate(0.5); 
+}
+
+.snow-text:nth-child(13) {
+filter: saturate(1.0); 
+}
+
+.snow-text:nth-child(14) {
+filter: saturate(0.2); 
+}
+
+.snow-text:nth-child(15) {
+filter: saturate(0.5); 
+}
+
+.snow-text:nth-child(16) {
+filter: saturate(0.8); 
+}
+
+.snow-text:nth-child(17) {
+filter: saturate(0.2); 
+}
+
+.snow-text:nth-child(18) {
+filter: saturate(1.0); 
+}
+
+/* 继续为其他元素设置不同的饱和度 */
+
+
+
+  /* 雪花样式 */
+  .snowflake {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    z-index: 1;
+    
+  }
+  
+  /* 下落动画：从当前位置下降到视口底部 */
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+      opacity: 0.2;
+    }
+  }
+  .snow-text.Snowy {
+    font-size: 45px; /* 默认大小 */
+  }
+  
+  /* 悬停时变大并发光 */
+  .snow-text.Snowy:hover {
+    font-size: 50px; /* 变大 */
+    text-shadow: 0 0 10px white, 0 0 20px rgba(255, 255, 255, 0.8); /* 发光效果 */
+    font-family: 'Kapakana', sans-serif;  
+  }
+
+  html, body {
+    height: 100%;   /* Ensure the body takes the full height of the viewport */
+    margin: 0;      /* Remove default margin */
+    overflow-y: auto; /* Enable vertical scrolling */
+    font-family: 'Crimson Text', serif; /* Just an example font */
+  }
+  
+  * {
+    cursor: none;
+}
+
+/* 定义自定义鼠标光标 */
+.cursor {
+    position: fixed;
+    width: 20px; /* 调整光标大小 */
+    height: 20px; /* 调整光标大小 */
+    background-color: white; /* 白色背景 */
+    border-radius: 50%; /* 圆形 */
+    pointer-events: none; /* 确保鼠标指针不会阻止点击 */
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* 发光效果 */
+    transition: all 0.1s ease; /* 平滑过渡 */
+    z-index: 1000; /* 确保光标位于最上层 */
+}
